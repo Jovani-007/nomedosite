@@ -1,11 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-	background-image: url("https://img.freepik.com/fotos-gratis/conceito-textured-pintado-colorido-concreto-do-papel-de-parede-da-parede_53876-31799.jpg?size=626&ext=jpg");
+	background-image: url("https://blog.venuscargo.com.br/wp-content/uploads/2018/03/vermelho.jpg");
 	background-size: auto 100vh;
 	font-family: Arial;
+	font-size: 14px;
+}
+
+@media (min-width: 400px) {
+    body {
+    	font-size: 18px
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+    	font-size: 20px
+    }
+}
+
+header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 a {
-	color: teal;
+	color: white;
 	text-decoration: none;
 }
 
@@ -13,17 +39,30 @@ a:hover {
 	text-decoration: underline;
 }
 
+figure {
+	padding: 10px;
+}
+
 .menu {
-	background-color: white;
+	background-color: black;
+	position: fixed;
+	width: 100vw;
+	top: 0;
 }
 
 .menu li {
 	list-style: none;
+	padding: 10px;
 }
 
 .menu ul {
 	display: flex;
 	justify-content: space-around;
+}
+
+.menu a {
+	background-color: black;
+	padding: 10px 50px;
 }
 
 .site-subtitle,
@@ -32,7 +71,20 @@ a:hover {
 	text-align: center;
 }
 
+.site-title {
+    font-size: 4em;
+}
+
 .site-subtitle {
     font-style: Italic;
 }
 
+.img-portfolio {
+	height: 180px;
+	width: 180px;
+}
+
+.img-portfolio2 {
+	height: 180px;
+	width: 150px;
+}
