@@ -5,7 +5,7 @@
 }
 
 body {
-	background-image: url("https://blog.venuscargo.com.br/wp-content/uploads/2018/03/vermelho.jpg");
+	background-image: url("https://cdn.pixabay.com/photo/2016/01/27/15/25/space-1164579_960_720.png");
 	background-size: auto 100vh;
 	font-family: Arial;
 	font-size: 14px;
@@ -35,16 +35,14 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
-figure {
-	padding: 10px;
+figcaption {
+	font-family: 'Kalam', cursive;
+	color: whitesmoke;
+	font-size: 25px;
 }
 
 .menu {
-	background-color: black;
+	background-color: whitesmoke;
 	position: fixed;
 	width: 100vw;
 	top: 0;
@@ -53,6 +51,7 @@ figure {
 .menu li {
 	list-style: none;
 	padding: 10px;
+	font-family: 'Righteous', cursive;
 }
 
 .menu ul {
@@ -61,30 +60,107 @@ figure {
 }
 
 .menu a {
-	background-color: black;
+	background-color: whitesmoke;
+	color: black;
 	padding: 10px 50px;
+	transition: background-color 0.75s, color 0.75s;
+}
+
+.menu a:hover {
+	background-color: #505057;
+	color: white;
 }
 
 .site-subtitle,
 .site-title {
-    color: whitesmoke;
+    color: yellow;
 	text-align: center;
 }
 
 .site-title {
-    font-size: 4em;
+    font-size: 5em;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.titulo {
+	transform: scale(.2) translateY(0vh);
+	opacity: 0;
+	animation: linear 5s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+  100% {
+  	transform: scale(1) translateY(0);
+	opacity: 1;
+  }
 }
 
 .site-subtitle {
-    font-style: Italic;
+    font-family: 'Righteous', cursive;
+    line-height: 1.5em;
 }
 
 .img-portfolio {
 	height: 180px;
-	width: 180px;
+    width: 180px;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 1s;
+	}
+
+.img-portfolio:hover {
+    transform: scale(1.2);
 }
 
 .img-portfolio2 {
 	height: 180px;
 	width: 150px;
+	transition: transform 1s;
+}
+
+.img-portfolio2:hover {
+    transform: scale(1.2);
+}
+
+.contato,
+.portfolio {
+	font-size: 35px;
+	color: whitesmoke;
+	font-family: 'Righteous', cursive;
+	padding: 2em;
+	margin-bottom: 1.5em;
+}
+
+.portfolio .grid {
+	display: grid;
+	grid-gap: 2em;
+	padding: 1.5em;
+}
+
+@media (min-width: 700px) {
+	.portfolio .grid { 
+	grid-template-columns: 300px 300px 300px;
+}
+}
+
+.portfolio figure {
+	text-align: center;
+}
+
+.contato a {
+	color: #06EEE3;
+	font-family: Arial;
+	font-size: 4em;
+	padding: 35px;
+	transition: text-shadow 500ms
+}
+
+.contato a:active,
+.contato a:hover {
+	text-decoration: none;
+	text-shadow: 5px 5px 4px navy;
+}
+
+.contato .icons {
+	text-align: center;
 }

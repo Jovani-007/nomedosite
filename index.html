@@ -5,42 +5,63 @@
 	    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
 	    <title>Giovanni Gamis</title>
 	    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+	    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&display=swap" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+	    <script src="https://kit.fontawesome.com/0b9f260052.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
         	<nav class="menu">
         		<ul>
-        			<li><a href="#">Sobre</a></li>
-        			<li><a href="#">Portifólio</a></li>
-        			<li><a href="#">Contato</a></li>
+        			<li>
+        			<a href="#home">
+        			<i class="fas fa-home"></i>
+        			</a>
+        		    </li>
+        			<li><a href="#sobre">Sobre</a></li>
+        			<li><a href="#portifolio">Portifólio</a></li>
+        			<li><a href="#contato">Contato</a></li>
         		</ul>
-
         	</nav>
-        	<div>
+             	<div class="titulo" id="home">
                 <h1 class="site-title">Giovanni Gamis</h1>
-                <h2 class="site-subtitle">Estudante de front-end</h2>
-        		</div>
-        	</header>
-        <section>
-            <h2 class="site-subtitle">Portfólio</h2>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
-                <figure>
-                    <img class="img-portfolio" src="./img/html5.png" alt="HTML5">
-                    <figcaption>Estudando HTML5</figcaption>
-                </figure>
-            </a>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/CSS_basico" target="_blank">
-                <figure>
-                    <img class="img-portfolio2" src="./img/css3.png" alt="CSS3">
-                    <figcaption>Estudando CSS</figcaption>
-                </figure>
-            </a>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript" target="_blank">
-                <figure>
-                    <img class="img-portfolio" src="./img/js.png" alt="JS">
-                    <figcaption>Planejando estudar JavaScript</figcaption>
-                </figure>
-            </a>
+                <h2 class="site-subtitle">Estudante de front-end<br>Aprendiz de Jedi</h2>
+            </div>
+        </header>
+        <section class="portfolio" id="portifolio">
+            <h2 class="">Portfólio</h2>
+            <div class="grid">
+            	<figure>
+                <img class="img-portfolio" src="./img/html5.png" alt="HTML5">
+                <figcaption>Estudando HTML5</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio2" src="./img/css3.png" alt="CSS3">
+                <figcaption>Estudando CSS</figcaption>                
+            </figure>
+            <figure>
+                <img class="img-portfolio" src="./img/js.png" alt="JS">
+                <figcaption>Planejando estudar JavaScript</figcaption>
+            </figure>
+            </div>
         </section>
+        <section class="contato" id="contato">
+  <h2>Contato</h2>
+	<div class="grid icons">
+    <a target="_blank" href="https://github.com/jovani-007">
+      <i class="fab fa-github"></i>
+    </a>
+    <a target="_blank" href="https://www.instagram.com/jovani_age/?hl=pt-br">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a target="_blank" href="https://www.facebook.com/giovanni.gamis.1">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="mailto:alcaraz.gamis.g@gmail.com">
+      <i class="fas fa-envelope-square"></i>
+    </a>
+  </div>
+</section>
+    <audio autoplay src="audio.mp3" loop controls></audio>
     </body>
 </html>
