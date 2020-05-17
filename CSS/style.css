@@ -46,6 +46,7 @@ figcaption {
 	position: fixed;
 	width: 100vw;
 	top: 0;
+	z-index: 1;
 }
 
 .menu li {
@@ -85,7 +86,7 @@ figcaption {
 .titulo {
 	transform: scale(.2) translateY(0vh);
 	opacity: 0;
-	animation: linear 5s animacaoTitulo forwards;
+	animation: linear 10s animacaoTitulo forwards;
 }
 
 @keyframes animacaoTitulo {
@@ -109,7 +110,7 @@ figcaption {
 	}
 
 .img-portfolio:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) rotateY(25deg);
 }
 
 .img-portfolio2 {
@@ -119,7 +120,7 @@ figcaption {
 }
 
 .img-portfolio2:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) rotateY(25deg);
 }
 
 .contato,
